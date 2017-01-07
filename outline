@@ -8,7 +8,7 @@ xanthoptica and lifestages
 -salamanders only: project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander.biom
 
 #workflow:
--filter out bacterial OTUs into new OTU table .biom files e.g. mapping_file_allxanth_n100_s2_salamander_bact.biom
+-filter out bacterial OTUs into new OTU table .biom files e.g. mapping_file_allxanth_n100_s2_salamander_bact.biom using filter_taxa_from_otu_table.py in QIIME
 -summarize tables again to get rarefaction numbers biom summarize-table -i /[biomfile] -o [biomfile]_summary.txt
 -edit /Microbiome data/parameters_revisions.txt to include appropriate diversity metrics (w, uw, bc, jacc) (chao1, obs, PD, mc, simps, shan, simps_e)
 -re-run core_diversity_analyses.py using /Microbiome data/parameters_revisions.txt
@@ -18,10 +18,3 @@ xanthoptica and lifestages
 -re-do 90% core microbiome counts using compute_core_microbiome.py in QIIME
 
 -group_significance.py may be useful for comparing abundances across populations
-
-https://groups.google.com/forum/#!topic/qiime-forum/vMXTXlbF1y0
-$ biom convert -i <input>.biom -o <output>.txt --table-type 'otu table' --header-key 'taxonomy' -b
-$ grep -i "k__Archaea" <output>.txt > filtered.txt
-
-And add the header line of the original file back. To convert the table back to biom format:
-$ biom convert -i <name>.txt -o <name>.biom --table-type 'otu table' --header-key 'taxonomy'
