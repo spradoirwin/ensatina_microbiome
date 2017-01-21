@@ -1,1 +1,41 @@
+# 1/21/2017 CODE 
 
+##filter out non-bacterial OTUs
+
+#soil and salamanders in xanth pops [sspop]
+filter_taxa_from_otu_table.py -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only.biom -p k__Bacteria
+
+biom convert -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only.txt --to-tsv
+
+#salamanders only in xanth pops [salpop]
+filter_taxa_from_otu_table.py -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_salamanders_n100_s2.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_salamanders_n100_s2_bact_only.biom -p k__Bacteria
+
+biom convert -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_salamanders_n100_s2_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_salamanders_n100_s2_bact_only.txt --to-tsv
+
+#salamanders in lifestages [life]
+filter_taxa_from_otu_table.py -i /home/qiime/Desktop/Shared_Folder/project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander.biom -o /home/qiime/Desktop/Shared_Folder/project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander_bact_only.biom -p k__Bacteria
+
+biom convert -i /home/qiime/Desktop/Shared_Folder/project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander.biom -o /home/qiime/Desktop/Shared_Folder/project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander_bact_only.txt --to-tsv
+
+##summarize tables to get rarefaction numbers
+#[sspop]
+biom summarize-table -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only_summary.txt
+
+#[salpop]
+biom summarize-table -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_salamanders_n100_s2_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_salamanders_n100_s2_bact_only_summary.txt
+
+#[life]
+biom summarize-table -i /home/qiime/Desktop/Shared_Folder/project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanth_lifestage_combined/otu_table_allxanth_n100_s2_salamander_bact_only_summary.txt
+
+##see options for beta diversity metrics
+beta_diversity.py -s
+#using binary Jaccard (presence/absence), bray-curtis, w and uw unifrac
+
+##see options for alpha diversity metrics
+alpha_diversity.py -s
+
+##changed parameters file
+
+##run core diversity analyses on each of these three new biom files
+#[sspops]
+core_diversity_analyses.py -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/core_output_xanthoptica_n100_s2_bact_only -m /home/qiime/Desktop/Shared_Folder/project_xanthoptica/mapping_file_xanthoptica_all.txt -p /home/qiime/Desktop/Shared_Folder/parameters_revisions.txt -t /home/qiime/Desktop/Shared_Folder/Microbiome_allsamples/q20_otus/rep_set.tre -e 33855
