@@ -39,3 +39,4 @@ alpha_diversity.py -s
 ##run core diversity analyses on each of these three new biom files
 #[sspops]
 core_diversity_analyses.py -i /home/qiime/Desktop/Shared_Folder/project_xanthoptica/otu_table_xanthoptica_n100_s2_bact_only.biom -o /home/qiime/Desktop/Shared_Folder/project_xanthoptica/core_output_xanthoptica_n100_s2_bact_only -m /home/qiime/Desktop/Shared_Folder/project_xanthoptica/mapping_file_xanthoptica_all.txt -p /home/qiime/Desktop/Shared_Folder/parameters_revisions.txt -t /home/qiime/Desktop/Shared_Folder/Microbiome_allsamples/q20_otus/rep_set.tre -e 33855
+##THIS ONE HAD AN ERROR - COULD NOT WRITE DIRECTORY FOR BETA DIVERSITY, SAID TO CHECK PERMISSIONS. GOING TO REBOOT AND SEE IF THAT HELPS.
