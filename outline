@@ -14,6 +14,7 @@ xanthoptica and lifestages
 -re-run core_diversity_analyses.py using /Microbiome data/parameters_revisions.txt
 
 -import alpha diversity data into R to re-do alpha diversity analyses
+   maybe use compare_alpha_diversity instead? http://qiime.org/scripts/compare_alpha_diversity.html
 -use compare_categories.py for adonis in QIIME for each of the beta diversity metrics
 -re-do 90% core microbiome counts using compute_core_microbiome.py in QIIME
 
