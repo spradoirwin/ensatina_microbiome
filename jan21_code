@@ -55,6 +55,20 @@ core_diversity_analyses.py -i otu_table_xanthoptica_n100_s2_bact_only.biom -o co
 core_diversity_analyses.py -i otu_table_xanthoptica_salamanders_n100_s2_bact_only.biom -o core_xanthoptica_salamanders_n100_s2_bact_only_test_bc_jac/ -m mapping_file_xanthoptica_salamanders.txt -t rep_set.tre -e 31025 -p parameters_revisions.txt
 
 ##check if this worked for Jac and BC - if it does, do [life] then redo [sspop]
+#it worked, but I didn't put unifracs - re-do with new paramater file saved
+#need to make sure the parameter file is not saved in Excel - adds quote marks! which seems to give it the permissions error
+
+##re-doing [salpop]
+
+core_diversity_analyses.py -i otu_table_xanthoptica_salamanders_n100_s2_bact_only.biom -o core_xanthoptica_salamanders_n100_s2_bact_only/ -m mapping_file_xanthoptica_salamanders.txt -t rep_set.tre -e 31025 -p parameters_revisions.txt
+
+#if this works, can delete core_xanthoptica_salamanders_n100_s2_bact_only_test_bc_jac
+#deleted
+
+##redo [sspop]
+#if this works, change name of directory, delete others 
+#changed, deleted
 
 #[life]
+core_diversity_analyses.py -i otu_table_allxanth_n100_s2_salamander_bact_only.biom -o core_lifestage_n100_s2_bact_only/ -m mapping_file_subspecies_xanth_salonly.txt -t rep_set.tre -e 24155 -p parameters_revisions.txt 
 
