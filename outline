@@ -19,3 +19,6 @@ xanthoptica and lifestages
 -re-do 90% core microbiome counts using compute_core_microbiome.py in QIIME
 
 -group_significance.py may be useful for comparing abundances across populations
+
+
+Mantel test - correlate geographic distance with dissimilarity? http://qiime.org/scripts/compare_distance_matrices.html
