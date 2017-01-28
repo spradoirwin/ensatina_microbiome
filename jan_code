@@ -151,7 +151,6 @@ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_x
 compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson
 compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_e
 simpson_e.txt           simpson_reciprocal.txt  
-compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_e.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_e
 compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_reciprocal.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_reciprocal
 
 
@@ -172,8 +171,7 @@ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt 
 compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
 Error in compare_alpha_diversity.py: option -i: file does not exist: 'core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson'
 
-If you need help with QIIME, see:
-http://help.qiime.org
+
 compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
 simpson_e.txt           simpson_reciprocal.txt  simpson.txt
 compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
@@ -193,6 +191,8 @@ group_significance.py -i core_xanthoptica_salamanders_n100_s2_bact_only/core_90/
 #group significance compare between soil and salamanders
 group_significance.py -i otu_table_xanthoptica_n100_s2_bact_only.biom -o core_xanthoptica_n100_s2_bact_only/group_significance_kruskal_wallis.txt -m mapping_file_xanthoptica_all.txt -c type -s nonparametric_t_test
 
+
+
 #change name of file to include nonpara t-test not kw
 mv core_xanthoptica_n100_s2_bact_only/group_significance_kruskal_wallis.txt core_xanthoptica_n100_s2_bact_only/group_significance_nonpara_t-test.txt
 
@@ -211,4 +211,6 @@ compare_categories.py --method adonis -n 999 -m mapping_file_lifestage_salamande
 #going to re-do core_div with only adults
 
 #then re-do compare_categories for the different distance matrices
+# moved OTU tables and mapping files to new folders
+
 
