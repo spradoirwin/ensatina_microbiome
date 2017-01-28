@@ -138,47 +138,47 @@ compare_categories.py --method adonis -n 999 -m mapping_file_lifestage_salamande
 ##[sspop] between types
  compare_alpha_diversity.py -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_
 alpha_div_collated/      alpha_rarefaction_plots/ 
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_
+compare_alpha_diversity.py -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_
 alpha_div_collated/      alpha_rarefaction_plots/ 
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/
+compare_alpha_diversity.py -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/
 chao1.txt               shannon.txt             simpson.txt
 observed_otus.txt       simpson_e.txt           
 PD_whole_tree.txt       simpson_reciprocal.txt  
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/chao1.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/chao1 
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/observed_otus.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/observed_otus
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/PD_whole_tree.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/PD_whole_tree
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/shannon.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/shannon
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_e
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/chao1.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/chao1 
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/observed_otus.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/observed_otus
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/PD_whole_tree.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/PD_whole_tree
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/shannon.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/shannon
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_e
 simpson_e.txt           simpson_reciprocal.txt  
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_e.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_e
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_reciprocal.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_reciprocal
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_e.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_e
+compare_alpha_diversity.py -c type -m mapping_file_xanthoptica_all.txt -i core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_div_collated/simpson_reciprocal.txt -o core_xanthoptica_n100_s2_bact_only/arare_max33855/alpha_results/simpson_reciprocal
 
 
 ##[salpop] between pops 
 compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/chao1.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/chao1
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/observed_otus.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/observed_otus
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/PD_whole_tree.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/PD_whole_tree
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/shannon.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/shannon
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/simpson.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/simpson
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/simpson_e.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/simpson_e
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/simpson_reciprocal.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/simpson_reciprocal
+compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/observed_otus.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/observed_otus
+compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/PD_whole_tree.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/PD_whole_tree
+compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/shannon.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/shannon
+compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/simpson.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/simpson
+compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/simpson_e.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/simpson_e
+compare_alpha_diversity.py -c pop -m mapping_file_xanthoptica_salamanders.txt -i core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/simpson_reciprocal.txt -o core_xanthoptica_salamanders_n100_s2_bact_only/arare_max31025/alpha_div_collated/alpha_results/simpson_reciprocal
 
 ##[lifestage] between sexes and ages
 compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/chao1.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/chao1
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/observed_otus.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/observed_otus
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/PD_whole_tree.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/PD_whole_tree
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/shannon.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/shannon
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/observed_otus.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/observed_otus
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/PD_whole_tree.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/PD_whole_tree
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/shannon.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/shannon
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
 Error in compare_alpha_diversity.py: option -i: file does not exist: 'core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson'
 
 If you need help with QIIME, see:
 http://help.qiime.org
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
 simpson_e.txt           simpson_reciprocal.txt  simpson.txt
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson_e.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson_e
-qiime@qiime-190-virtual-box:~/Desktop/Shared_Folder$ compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson_reciprocal.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson_reciprocal
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson_e.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson_e
+compare_alpha_diversity.py -c sex,age -m mapping_file_lifestage_salamanders.txt -i core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/simpson_reciprocal.txt -o core_lifestage_n100_s2_bact_only/arare_max23790/alpha_div_collated/alpha_results/simpson_reciprocal
 
 ##computing core microbiome for all salamanders [allsal]
 compute_core_microbiome.py -i otu_table_allxanth_n100_s2_salamander_bact_only.biom -o core_allxanth_n100_s2_bact_only/core_90 --min_fraction_for_core 0.9
@@ -195,4 +195,20 @@ group_significance.py -i otu_table_xanthoptica_n100_s2_bact_only.biom -o core_xa
 
 #change name of file to include nonpara t-test not kw
 mv core_xanthoptica_n100_s2_bact_only/group_significance_kruskal_wallis.txt core_xanthoptica_n100_s2_bact_only/group_significance_nonpara_t-test.txt
+
+
+##JAN 28, 2017
+#last time I did lifestage analysis, I had juv as a sex
+#re-run without juv - just blanks in sex column
+compare_categories.py --method adonis -n 999 -m mapping_file_lifestage_salamanders.txt -c sex -i core_lifestage_n100_s2_bact_only/bdiv_even23790/unweighted_unifrac_dm.txt -o core_lifestage_n100_s2_bact_only/adonis_sex_uw
+#looks like this used all the samples anyway so I deleted it
+
+#make an OTU table of just adults
+compare_categories.py --method adonis -n 999 -m mapping_file_lifestage_salamanders.txt -c sex -i core_lifestage_n100_s2_bact_only/bdiv_even23790/unweighted_unifrac_dm.txt -o core_lifestage_n100_s2_bact_only/adonis_sex_uw
+
+#maybe I just need a mapping file with just adults...
+#it's not letting me ignore samples from mapping file
+#going to re-do core_div with only adults
+
+#then re-do compare_categories for the different distance matrices
 
