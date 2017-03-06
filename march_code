@@ -1,0 +1,10 @@
+##re-creating core 90 info/tables
+##made a list of core 90 OTUs saved as .txt
+##going to filter sal pop .biom file to include only those otus, then run anovas on them.
+
+##file: code_in_progress_3-6
+
+filter_otus_from_otu_table.py -i /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/taxa_plots/table_mc31025_sorted.biom -o /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/taxa_plots/core_otus_90.biom -e /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/core_90/core_otu_list.txt --negate_ids_to_exclude
+
+biom convert -i /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/taxa_plots/core_otus_90.biom -o /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/taxa_plots/core_otus_90.txt --to-tsv
+
