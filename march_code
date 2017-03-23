@@ -8,3 +8,30 @@ filter_otus_from_otu_table.py -i /home/qiime/Desktop/Shared_Folder/core_xanthopt
 
 biom convert -i /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/taxa_plots/core_otus_90.biom -o /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/taxa_plots/core_otus_90.txt --to-tsv
 
+#3-7
+##working with core 90 file - re-matching to woodhams db
+
+filter_otus_from_otu_table.py -i core_90/core_table_90.biom -o core_90/inhib_match_otus.biom -e core_90/333_exact_match_inhibitory_OTUs.txt --negate_ids_to_exclude
+
+biom convert -i core_90/inhib_match_otus.biom -o core_90/inhib_match_otus.txt --to-tsv
+
+
+##using core_90 from xanth sal to analyze lifestages
+filter_otus_from_otu_table.py -i core_lifestage_n100_s2_bact_only/taxa_plots/table_mc23790_sorted.biom -o core_lifestage_n100_s2_bact_only/core_otus_90_lifestage.biom -e core_xanthoptica_salamanders_n100_s2_bact_only/core_90/core_otu_list.txt --negate_ids_to_exclude
+
+biom convert -i core_lifestage_n100_s2_bact_only/core_90/core_otus_90_lifestage.biom -o core_lifestage_n100_s2_bact_only/core_90/core_otus_90_lifestage.txt --to-tsv
+
+
+#3-23
+##working with core 90 file for lifestages - re-matching to woodhams db
+cd /home/qiime/Desktop/Shared_Folder/core_lifestage_n100_s2_bact_only/
+
+filter_otus_from_otu_table.py -i core_90/core_otus_90_lifestage.biom -o core_90/inhib_match_otus_lifestage.biom -e /home/qiime/Desktop/Shared_Folder/core_xanthoptica_salamanders_n100_s2_bact_only/core_90/333_exact_match_inhibitory_OTUs.txt --negate_ids_to_exclude
+
+biom convert -i core_90/inhib_match_otus_lifestage.biom -o core_90/inhib_match_otus_lifestage.txt --to-tsv
+
+
+
+
+
+
